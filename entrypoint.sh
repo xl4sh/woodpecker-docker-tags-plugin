@@ -196,7 +196,7 @@ handle_sha() {
       length=40
       ;;
     -p | --prefix)
-      prefix="$2"
+      prefix="${2//[\"\']/}"
       shift
       ;;
     *)
